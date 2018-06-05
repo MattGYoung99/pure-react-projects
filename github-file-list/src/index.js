@@ -32,6 +32,60 @@ import registerServiceWorker from './registerServiceWorker';
                 message: 'Added a readme'
             }
         },
+        {
+            id: 4,
+            name: 'src',
+            type: 'folder',
+            updated_at: "2016-07-11 21:24:00",
+            latestCommit: {
+                message: 'Initial commit'
+            }
+        },
+        {
+            id: 5,
+            name: 'tests',
+            type: 'folder',
+            updated_at: "2016-07-11 21:24:00",
+            latestCommit: {
+                message: 'Initial commit'
+            }
+        },
+        {
+            id: 6,
+            name: 'README',
+            type: 'file',
+            updated_at: "2016-07-18 21:24:00",
+            latestCommit: {
+                message: 'Added a readme'
+            }
+        },
+        {
+            id: 7,
+            name: 'src',
+            type: 'folder',
+            updated_at: "2016-07-11 21:24:00",
+            latestCommit: {
+                message: 'Initial commit'
+            }
+        },
+        {
+            id: 8,
+            name: 'tests',
+            type: 'folder',
+            updated_at: "2016-07-11 21:24:00",
+            latestCommit: {
+                message: 'Initial commit'
+            }
+        },
+        {
+            id: 9,
+            name: 'README',
+            type: 'file',
+            updated_at: "2016-07-18 21:24:00",
+            latestCommit: {
+                message: 'Added a readme'
+            }
+        },
   ];
 
 const Time = ({ time }) => {
@@ -73,19 +127,16 @@ const FileListItem = ({file}) => {
     )
 }
 
-
 const FileList = ({ files }) => {
     return (
             <div className="file-list">
-                <div>
                     {
                         files.map(file => {
                             return (
-                                <FileListItem file={file}/>
+                                <FileListItem key={file.id} file={file}/>
                             )
                         })
                     }
-                </div>
             </div>
         )
 }

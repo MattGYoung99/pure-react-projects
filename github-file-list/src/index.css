@@ -4,11 +4,6 @@ body {
   font-family: sans-serif;
 }
 
-.file-list div .fileRow span {
-  text-align: left;
-  width: 33%;
-}
-
 .file-list {
   font-family: Helvetica, sans-serif;
   width: 980px;
@@ -19,6 +14,26 @@ body {
 }
 
 .file-name {
-  padding: 4px;
-  max-width: 180px;
+  float:left;
+  width: 40%;
 }
+
+.file-icon {
+  float: left;
+  width: 10%;
+}
+
+.commit-message {
+  float: left;
+  width: 30%;
+}
+
+.time {
+  width: 20%;
+}
+
+.file-list .file-item-row {
+  border: #ccc 1px solid;
+  width: 100%;
+}
+
