@@ -45,26 +45,26 @@ const Time = ({ time }) => {
 
 const CommitMessage = ({ commitMsg }) => {
     return (
-        <p>{commitMsg}</p>
+        <span className="commit-message">{commitMsg}</span>
     )
 }
 
 const FileIcon = ({ icon }) => {
     return (
-        <p>{icon}</p>
+        <span className="file-icon">{icon}</span>
     )
 }
 
 const FileName = ({ name }) => {
     return (
-        <p>{name}</p>
+        <span className="file-name">{name}</span>
     )
 }
 
 
 const FileListItem = ({file}) => {
     return (
-        <div>
+        <div className="file-item-row" key={file.id}>
             <FileIcon icon={file.type}/>
             <FileName name={file.name}/>
             <CommitMessage commitMsg={file.latestCommit.message}/>
@@ -76,21 +76,17 @@ const FileListItem = ({file}) => {
 
 const FileList = ({ files }) => {
     return (
-            <table>
-                <tbody>
+            <div className="file-list">
+                <div>
                     {
                         files.map(file => {
                             return (
-                                <tr key={file.id}>
-                                    <td>{file.type}</td>
-                                    <td>{file.name}</td>
-                                    <td>{file.latestCommit.message}</td>
-                                </tr>
+                                <FileListItem file={file}/>
                             )
                         })
                     }
-                </tbody>
-            </table>
+                </div>
+            </div>
         )
 }
 

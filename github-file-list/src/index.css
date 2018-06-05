@@ -4,16 +4,9 @@ body {
   font-family: sans-serif;
 }
 
-table {
-  font-family: arial, sans-serif;
-  border-collapse: collapse;
-  width: 100%;
-}
-
-td, th {
-  border: 1px solid #dddddd;
+.file-list div .fileRow span {
   text-align: left;
-  padding: 8px;
+  width: 33%;
 }
 
 .file-list {
@@ -23,10 +16,6 @@ td, th {
   margin: 0 auto;
   border: 1px solid #ccc;
   border-collapse: collapse;
-}
-
-.file-list td {
-  border-top: 1px solid #ccc;
 }
 
 .file-name {
