@@ -105,7 +105,7 @@ const CommitMessage = ({ commitMsg }) => {
 
 const FileIcon = ({ icon }) => {
     return (
-        <span className="file-icon">{icon}</span>
+        <span className="file-icon"><i class="fas fa-file"></i></span>
     )
 }
 
