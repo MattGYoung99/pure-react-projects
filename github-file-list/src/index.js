@@ -104,8 +104,15 @@ const CommitMessage = ({ commitMsg }) => {
 }
 
 const FileIcon = ({ icon }) => {
+    const fileType = '';
+    if (icon == 'file') {
+        fileType = 'file';
+    } else {
+        fileType = 'folder';
+    }
+    console.log({icon, fileType})
     return (
-        <span className="file-icon"><i class="fas fa-file"></i></span>
+    <span className="file-icon">{/*<i class={`fas fa ${fileType}`}></i>*/}</span>
     )
 }
 
