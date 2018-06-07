@@ -25,7 +25,7 @@ import registerServiceWorker from './registerServiceWorker';
         },
         {
             id: 3,
-            name: 'README',
+            name: 'README.txt',
             type: 'file',
             updated_at: "2016-07-18 21:24:00",
             latestCommit: {
@@ -52,7 +52,7 @@ import registerServiceWorker from './registerServiceWorker';
         },
         {
             id: 6,
-            name: 'README',
+            name: 'README.txt',
             type: 'file',
             updated_at: "2016-07-18 21:24:00",
             latestCommit: {
@@ -79,7 +79,7 @@ import registerServiceWorker from './registerServiceWorker';
         },
         {
             id: 9,
-            name: 'README',
+            name: 'README.txt',
             type: 'file',
             updated_at: "2016-07-18 21:24:00",
             latestCommit: {
@@ -107,7 +107,7 @@ const FileIcon = ({ icon }) => {
     const FolderFile = icon === 'folder' ? 'folder' : 'file';
     console.log(FolderFile)
     return (
-        <span className="file-icon"><i class={`fas fa-${FolderFile}`}></i></span>
+        <span className={`file-icon ${FolderFile}`}><i className={`fas fa-${FolderFile}`}></i></span>
     )
 }
 

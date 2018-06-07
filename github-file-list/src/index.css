@@ -1,13 +1,12 @@
 body {
-  margin: 0;
-  padding: 0;
+  margin: 10;
+  padding: 10;
   font-family: sans-serif;
 }
 
 .file-list {
   font-family: Helvetica, sans-serif;
   width: 980px;
-  color: #333;
   margin: 0 auto;
   border: 1px solid #ccc;
   border-collapse: collapse;
