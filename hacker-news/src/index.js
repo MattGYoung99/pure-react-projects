@@ -24,6 +24,18 @@ const HeadNavBar = () => {
     )
 }
 
+const UserName = () => {
 
+}
+
+const Time = ({ time }) => {
+    const timeString = moment(time).fromNow();
+    return (
+        <span className="time">
+            {timeString}
+        </span>
+    )
+}
+ 
 ReactDOM.render(<HeadNavBar/>, document.getElementById('root'));
 registerServiceWorker();
