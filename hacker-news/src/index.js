@@ -241,7 +241,7 @@ class HackerNews extends React.Component {
     render () {
         return (
             <div>
-                <HeadNavBar/>,
+                <HeadNavBar/>
                 <Article posts={expPost}/>
             </div>
         )
