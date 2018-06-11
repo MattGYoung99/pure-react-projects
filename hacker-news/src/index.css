@@ -1,7 +1,13 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
 body {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+  font-family: 'Open Sans', sans-serif;
+}
+
+a {
+  text-decoration: none !important;
 }
 
 .headItem {
@@ -10,6 +16,7 @@ body {
 }
 
 .headTitle {
+  padding-left: 12px;
   padding-right: 12px;
   font-size: 24px;
 }
@@ -22,14 +29,69 @@ body {
   background-color: rgb(255, 68, 0);
 }
 
-.article {
-  background: #eee;
+.article { 
+  background-color: #eee; 
+  display: grid;
 }
 
 .postHead {
-  float:left;
+  padding-left: 8px;
+  width: 100%;
 }
 
 .postNavBar {
-  float:left;
+  padding-left: 68px;
+}
+
+.title {
+  width: 50%;
+  padding-top: 6px;
+  float: left;
+  font-size: 24px;
+}
+
+.listNumber {
+  width: 1.5%;
+  float: left;
+  padding-top: 8px;  
+  font-size: 20px;
+}
+
+.source {
+  padding-top: 12px;
+  width: 40%;
+  opacity: 0.2;
+  float: left;
+}
+.source:hover {
+  opacity: 0.5
+}
+
+.arrows {
+  width: 1.5%;
+  float: left;
+  display: grid;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.upvote {
+  opacity: 0.5;
+  -webkit-text-stroke: 4px black;
+}
+
+.downvote {
+  opacity: 0.5;
+  display: inline-block;
+  -webkit-text-stroke: 4px black;
+  -webkit-transform: rotateX(180deg);
+  transform: rotateX(180deg); 
+}
+
+.upvote:hover {
+  opacity: 1.0
+}
+
+.downvote:hover {
+  opacity: 1.0;
 }
