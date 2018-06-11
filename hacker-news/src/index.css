@@ -2,7 +2,6 @@ body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
-  background-color: #eee;
 }
 
 .headItem {
@@ -20,6 +19,17 @@ body {
 }
 
 .headNav {
-  background-color: coral;
+  background-color: rgb(255, 68, 0);
 }
 
+.article {
+  background: #eee;
+}
+
+.postHead {
+  float:left;
+}
+
+.postNavBar {
+  float:left;
+}
