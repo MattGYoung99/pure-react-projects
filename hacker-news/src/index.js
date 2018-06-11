@@ -13,7 +13,7 @@ const expPost = [
         title: 'This is why i am not suing the great government of america',
         username: 'iLoveToLearn',
         source: 'source.link',
-        updated_at: "2016-012-11 21:24:00"
+        updated_at: "2016-12-11 21:24:00"
     },
     {
         id: 2,
@@ -85,7 +85,7 @@ const expPost = [
         title: 'This is why i am not suing the great government of america',
         username: 'iLoveToLearn',
         source: 'source.link',
-        updated_at: "2016-012-11 21:24:00"
+        updated_at: "2016-12-11 21:24:00"
     },
     {
         id: 10,
