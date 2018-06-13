@@ -2,7 +2,7 @@
     max-width: 800px;
     margin: 0 auto;
 }
-    
+
 .App-nav {
     margin: 20px;
     padding: 10px;
@@ -37,3 +37,4 @@
 .App-nav-item.selected {
     border-bottom-color: #FFAA3F;
 }
+
