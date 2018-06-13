@@ -17,6 +17,16 @@ class App extends React.Component {
       cart: [...this.state.cart, item.id]
     });
   }
+
+  handleRemoveOne = (item) => {
+    let index = this.state.cart.indexOf(item.id);
+    this.setState({
+      cart: [
+        ...this.state.cart.slice(0, index),
+        ...this.state.cart.slice(index + 1)
+      ]
+    });
+  }
   renderContent() {
       switch(this.state.activeTab) {
         default:
@@ -45,12 +55,14 @@ class App extends React.Component {
         var item = items.find(item =>
           item.id === parseInt(itemId, 10)
         );
-  
+
         // Create a new "item" that also has a 'count' property
-        return {
-          ...item,
-          count: itemCounts[itemId]
-        }
+      return (
+          <CartPage
+            items={cartItems}
+            onAddOne={this.handleAddToCart}
+            onRemoveOne={this.handleRemoveOne} />
+        );  
       });
   
       return (
